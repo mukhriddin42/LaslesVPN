@@ -178,6 +178,9 @@ header.scrolled {
     display: flex;
     align-items: center;
     gap: 20px;
+    background-color:#4f566519;
+    padding: 20px 40px;
+    border-radius: 7px;
 }
 
 .statistic-card .statistics-icon {
@@ -188,6 +191,11 @@ header.scrolled {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.homepage-statistics .horizantal-line {
+    border-right: 3px solid #4f56652a;
+    border-radius: 50%;
 }
 
 .statistic-card .statistics-icon i {
@@ -207,3 +215,365 @@ header.scrolled {
     font-size: 18px;
     letter-spacing: .8px;
 }
+
+
+
+
+/* Features section */
+.features {
+    padding-top: 200px;
+}
+
+.features-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-right-text {
+    width: 40%;
+    padding-top: 50px;
+}
+
+.features-right-text .features-title {
+    font-weight: 500;
+    width: 400px;
+}
+
+.features-right-text p {
+    margin-top: 25px;
+    line-height: 30px;
+}
+
+.features-right-text ul {
+    margin-top: 26px;
+}
+
+.features-right-text ul li {
+    font-family: var(--Rubik);
+    color: var(--Gray);
+    font-size: 16px;
+    line-height: 55px;
+}
+
+.features-right-text ul li i {
+    color: #2FAB73;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
+
+/* Pricing section */
+.pricing {
+    padding-top: 120px;
+}
+
+
+
+/* Map section */
+.map-section {
+    padding-top: 100px;
+}
+
+.map-section__content h1 {
+    width: 400px;
+    font-weight: 500;
+    text-align: top;
+    margin: 0 auto;
+}
+
+.map-section__content p {
+    width: 600px;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 16px;
+}
+
+.map-section__content p span {
+    font-weight: bold;
+}
+
+.map-section__content .map-box {
+    margin: 20px auto;
+    border: 1px solid green;
+    width: 1000px;
+    height: 500px;
+    background: url('../images/karta.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.map-box span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.map-box span img {
+    width: 100%;
+}
+
+.map-box span:nth-child(1),
+.map-box span:nth-child(5),
+.map-box span:nth-child(9),
+.map-box span:nth-child(13),
+.map-box span:nth-child(17),
+.map-box span:nth-child(21) {
+    width: 20px;
+}
+
+.map-box span:nth-child(2),
+.map-box span:nth-child(6),
+.map-box span:nth-child(10),
+.map-box span:nth-child(14),
+.map-box span:nth-child(18),
+.map-box span:nth-child(22) {
+    width: 30px;
+}
+
+.map-box span:nth-child(3),
+.map-box span:nth-child(7),
+.map-box span:nth-child(11),
+.map-box span:nth-child(15),
+.map-box span:nth-child(19),
+.map-box span:nth-child(23) {
+    width: 40px;
+}
+
+.map-box span:nth-child(4),
+.map-box span:nth-child(8),
+.map-box span:nth-child(12),
+.map-box span:nth-child(16),
+.map-box span:nth-child(20),
+.map-box span:nth-child(24) {
+    width: 50px;
+}
+
+.map-box span:nth-child(1) {
+    top: 320px;
+    left: 900px;
+}
+
+.map-box span:nth-child(2) {
+    top: 20px;
+    left: 250px;
+}
+
+.map-box span:nth-child(3) {
+    top: 60px;
+    left: 30px;
+}
+.map-box span:nth-child(4) {
+    top: 400px;
+    left: 930px;
+}
+
+.map-box span:nth-child(5) {
+    top: 60px;
+    left: 840px;
+}
+.map-box span:nth-child(6) {
+    top: 60px;
+    left: 720px;
+}
+.map-box span:nth-child(7) {
+    top: 10px;
+    left: 400px;
+}
+.map-box span:nth-child(8) {
+    top: 100px;
+    left: 620px;
+}
+.map-box span:nth-child(9) {
+    top: 70px;
+    left: 390px;
+    animation-name: moving9;
+
+}
+.map-box span:nth-child(10) {
+    top: 70px;
+    left: 120px;
+    animation-name: moving10;
+
+}
+.map-box span:nth-child(11) {
+    top: 100px;
+    left: 190px;
+    animation-name: moving11;
+
+}
+.map-box span:nth-child(12) {
+    top: 160px;
+    left: 140px;
+    animation-name: moving12;
+
+}
+
+.map-box span:nth-child(13) {
+    top: 110px;
+    left: 310px;
+    animation-name: moving13;
+
+}
+.map-box span:nth-child(14) {
+    top: 240px;
+    left: 210px;
+    animation-name: moving14;
+
+}
+.map-box span:nth-child(15) {
+    top: 190px;
+    left: 250px;
+    animation-name: moving15;
+
+}
+.map-box span:nth-child(16) {
+    top: 290px;
+    left: 300px;
+    animation-name: moving16;
+
+}
+.map-box span:nth-child(17) {
+    top: 350px;
+    left: 400px;
+    animation-name: moving17;
+
+}
+.map-box span:nth-child(18) {
+    top: 450px;
+    left: 330px;
+    animation-name: moving18;
+
+}
+.map-box span:nth-child(19) {
+    top: 260px;
+    left: 550px;
+    animation-name: moving19;
+    border: 1px solid blue;
+}
+@keyframes moving19 {
+    0% {
+        top: 260px;
+        left: 550px;
+    }
+    50% {
+        top: 420px;
+        left: 920px;
+    }
+    100% {
+        top: 260px;
+        left: 550px;
+    }
+}
+
+
+.map-box span:nth-child(20) {
+    top: 400px;
+    left: 600px;
+    animation-name: moving20;
+}
+@keyframes moving20 {
+    0% {
+        top: 400px;
+        left: 600px;
+    }
+    50% {
+        top: 380px;
+        left: 340px;
+    }
+    100% {
+        top: 400px;
+        left: 600px;
+    }
+}
+
+
+.map-box span:nth-child(21) {
+    top: 240px;
+    left: 700px;
+    animation-name: moving21;
+}
+@keyframes moving21 {
+    0% {
+        top: 240px;
+        left: 700px;
+    }
+    50% {
+        top: 200px;
+        left: 900px;
+    }
+    100% {
+        top: 240px;
+        left: 700px;
+    }
+}
+
+
+.map-box span:nth-child(22) {
+    top: 150px;
+    left: 780px;
+    animation-name: moving22;
+}
+@keyframes moving22 {
+    0% {
+        top: 150px;
+        left: 780px;
+    }
+    50% {
+        top: 150px;
+        left: 530px;
+    }
+    100% {
+        top: 150px;
+        left: 780px;
+    }
+}
+
+.map-box span:nth-child(23) {
+    top: 260px;
+    left: 800px;
+    animation-name: moving23;
+}
+@keyframes moving23 {
+    0% {
+        top: 260px;
+        left: 800px;
+    }
+    50% {
+        top: 80px;
+        left: 770px;
+    }
+    100% {
+        top: 260px;
+        left: 800px;
+    }
+}
+
+
+.map-box span:nth-child(24) {
+    top: 70px;
+    left: 900px;
+    animation-name: moving24;
+}
+
+@keyframes moving24 {
+    0% {
+        top: 70px;
+        left: 900px;
+    }
+    50% {
+        top: 300px;
+        left: 610px;
+    }
+    100% {
+        top: 70px;
+        left: 900px;
+    }
+}
+
