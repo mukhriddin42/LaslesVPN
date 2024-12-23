@@ -310,9 +310,9 @@ header.scrolled {
     width: 30px;
     height: 30px;
     position: absolute;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-timing-function: linear;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
 }
 
 .map-box span img {
@@ -358,104 +358,324 @@ header.scrolled {
 .map-box span:nth-child(1) {
     top: 320px;
     left: 900px;
+    animation-name: moving1;
 }
 
 .map-box span:nth-child(2) {
     top: 20px;
     left: 250px;
+    animation-name: moving2;
 }
 
 .map-box span:nth-child(3) {
     top: 60px;
     left: 30px;
+    animation-name: moving3;
 }
 .map-box span:nth-child(4) {
     top: 400px;
     left: 930px;
+    animation-name: moving4;
 }
 
 .map-box span:nth-child(5) {
     top: 60px;
     left: 840px;
+    animation-name: moving5;
+    /* border: 1px solid #0000ff; */
 }
+@keyframes moving6 {
+    0% {
+        top: 60px;
+        left: 840px;
+    }
+    50% {
+        top: 60px;
+        left: 840px;
+    }
+    100% {
+        top: 60px;
+        left: 840px;
+    }
+}
+
 .map-box span:nth-child(6) {
     top: 60px;
     left: 720px;
+    animation-name: moving6;
 }
+@keyframes moving6 {
+    0% {
+        top: 60px;
+        left: 720px;
+    }
+    50% {
+        top: 140px;
+        left: 960px;
+    }
+    100% {
+        top: 60px;
+        left: 720px;
+    }
+}
+
+
 .map-box span:nth-child(7) {
     top: 10px;
     left: 400px;
+    animation-name: moving7;
 }
+@keyframes moving7 {
+    0% {
+        top: 10px;
+        left: 400px;
+    }
+    50% {
+        top: 160px;
+        left: 140px;
+    }
+    100% {
+        top: 10px;
+        left: 400px;
+    }
+}
+
+
 .map-box span:nth-child(8) {
     top: 100px;
     left: 620px;
+    animation-name: moving8;
 }
+@keyframes moving8 {
+    0% {
+        top: 100px;
+        left: 620px;
+    }
+    50% {
+        top: 230px;
+        left: 780px;
+    }
+    100% {
+        top: 100px;
+        left: 620px;
+    }
+}
+
+
 .map-box span:nth-child(9) {
     top: 70px;
     left: 390px;
     animation-name: moving9;
-
 }
+@keyframes moving9 {
+    0% {
+        top: 70px;
+        left: 390px;
+    }
+    50% {
+        top: 420px;
+        left: 350px;
+    }
+    100% {
+        top: 70px;
+        left: 390px;
+    }
+}
+
+
 .map-box span:nth-child(10) {
     top: 70px;
     left: 120px;
     animation-name: moving10;
-
 }
+@keyframes moving10 {
+    0% {
+        top: 70px;
+        left: 120px;
+    }
+    50% {
+        top: 120px;
+        left: 320px;
+    }
+    100% {
+        top: 70px;
+        left: 120px;
+    }
+}
+
+
 .map-box span:nth-child(11) {
     top: 100px;
     left: 190px;
     animation-name: moving11;
-
 }
+@keyframes moving11 {
+    0% {
+        top: 100px;
+        left: 190px;
+    }
+    50% {
+        top: 10px;
+        left: 160px;
+    }
+    100% {
+        top: 100px;
+        left: 190px;
+    }
+}
+
+
 .map-box span:nth-child(12) {
     top: 160px;
     left: 140px;
     animation-name: moving12;
-
 }
+@keyframes moving12 {
+    0% {
+        top: 160px;
+        left: 140px;
+    }
+    50% {
+        top: 220px;
+        left: 560px;
+    }
+    100% {
+        top: 160px;
+        left: 140px;
+    }
+}
+
 
 .map-box span:nth-child(13) {
     top: 110px;
     left: 310px;
     animation-name: moving13;
-
 }
+@keyframes moving13 {
+    0% {
+        top: 110px;
+        left: 310px;
+    }
+    50% {
+        top: 40px;
+        left: 620px;
+    }
+    100% {
+        top: 110px;
+        left: 310px;
+    }
+}
+
+
 .map-box span:nth-child(14) {
     top: 240px;
     left: 210px;
     animation-name: moving14;
-
 }
+@keyframes moving14 {
+    0% {
+        top: 240px;
+        left: 210px;
+    }
+    50% {
+        top: 40px;
+        left: 40px;
+    }
+    100% {
+        top: 240px;
+        left: 210px;
+    }
+}
+
+
 .map-box span:nth-child(15) {
     top: 190px;
     left: 250px;
     animation-name: moving15;
-
 }
+@keyframes moving15 {
+    0% {
+        top: 190px;
+        left: 250px;
+    }
+    50% {
+        top: 400px;
+        left: 310px;
+    }
+    100% {
+        top: 190px;
+        left: 250px;
+    }
+}
+
+
 .map-box span:nth-child(16) {
     top: 290px;
     left: 300px;
     animation-name: moving16;
-
 }
+@keyframes moving16 {
+    0% {
+        top: 290px;
+        left: 300px;
+    }
+    50% {
+        top: 160px;
+        left: 510px;
+    }
+    100% {
+        top: 290px;
+        left: 300px;
+    }
+}
+
+
 .map-box span:nth-child(17) {
     top: 350px;
     left: 400px;
     animation-name: moving17;
-
 }
+@keyframes moving17 {
+    0% {
+        top: 350px;
+        left: 400px;
+    }
+    50% {
+        top: 170px;
+        left: 200px;
+    }
+    100% {
+        top: 350px;
+        left: 400px;
+    }
+}
+
+
 .map-box span:nth-child(18) {
     top: 450px;
     left: 330px;
     animation-name: moving18;
-
 }
+@keyframes moving18 {
+    0% {
+        top: 450px;
+        left: 330px;
+    }
+    50% {
+        top: 250px;
+        left: 500px;
+    }
+    100% {
+        top: 450px;
+        left: 330px;
+    }
+}
+
+
 .map-box span:nth-child(19) {
     top: 260px;
     left: 550px;
     animation-name: moving19;
-    border: 1px solid blue;
 }
 @keyframes moving19 {
     0% {
