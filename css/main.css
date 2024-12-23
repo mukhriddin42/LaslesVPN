@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --Red: #F53838;
+    --Gray: #4F5665;
+    --DarkBlue: #0B132A;
+    --Gold: #FEA250;
+    --LightPink: #FFECEC;
+    --Rubik: Rubik;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+.ellipse-btn {
+    padding: 8px 30px;
+    border: 2px solid var(--Red);
+    border-radius: 25px;
+}
+
+.rec-btn {
+    color: #fff;
+    background: var(--Red);
+    padding: 16px 40px;
+    border-radius: 7px;
+    box-shadow: var(--Red) 0px 20px 30px -10px;
+}
+
+
+.h1_title {
+    font-family: var(--Rubik);
+    color: var(--DarkBlue);
+    font-size: 34px;
+    letter-spacing: 0.8px;
+}
+
+.subtitle {
+    font-family: var(--Rubik);
+    color: var(--Gray);
+    font-size: 18px;
+    letter-spacing: 0.8px;
+}
+
+
+
+
+
+
+
+/* Homepage section */
+/* Header section */
+header {
+    padding-top: 30px;
+    background-color: transparent;
+    transition: all .7s;
+    z-index: 1;
+}
+
+header.scrolled {
+    background-color: var(--Gray); /* Scroll qilinganda fon rang o'zgaradi */
+  }
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-main .nav-middle {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-middle li a {
+    color: var(--Gray);
+    font-family: var(--Rubik);
+    letter-spacing: 0.8px;
+    font-size: 16px;
+    transition: all .7s;
+}
+
+.nav-middle li:hover a{
+    letter-spacing: 1.7px;
+    color: #000;
+}
+
+.header-main .nav-register {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-register a {
+    color: var(--Gray);
+    font-family: var(--Rubik);
+    letter-spacing: .8px;
+    font-weight: 600;
+    transition: all .7s ease-in;
+}
+
+.nav-register .sign-in:hover {
+    color: var(--Red);
+}
+
+.nav-register .sign-up {
+    color: var(--Red);
+}
+
+.nav-register .sign-up:hover {
+    background-color: var(--Red);
+    color: #fff;
+}
+
+.welcome-page {
+    padding-top: 120px;
+}
+
+.homepage-content {
+    display: flex;
+    align-items: center;
+}
+
+
+.homepage-left .homepage-title {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 56px;
+}
+
+.homepage-left .homepage-title span {
+    font-weight: 600;
+}
+
+.homepage-left .homepage-subtitle {
+    margin-top: 20px;
+    line-height: 28px;
+}
+
+.homepage-left a {
+    display: inline-block;
+    color: #fff;
+    font-family: var(--Rubik);
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 80px;
+}
+
+
+
+
+/* Statistic section */
+.homepage-statistics {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.statistic-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.statistic-card .statistics-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--LightPink) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statistic-card .statistics-icon i {
+    color: var(--Red);
+    font-size: 20px;
+}
+
+.statistic-card .statistics-text h3 {
+    font-family: var(--Rubik);
+    font-size: 30px;
+    color: var(--DarkBlue);
+}
+
+.statistic-card .statistics-text p {
+    font-family: var(--Rubik);
+    color: var(--Gray);
+    font-size: 18px;
+    letter-spacing: .8px;
+}
