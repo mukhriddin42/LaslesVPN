@@ -31,17 +31,28 @@ li {
 
 
 .ellipse-btn {
-    padding: 8px 30px;
-    border: 2px solid var(--Red);
+    padding: 8px 55px;
+    border: 3px solid var(--Red);
     border-radius: 25px;
+    color: var(--Red);
+    font-family: var(--Rubik);
+    font-weight: bold;
+    transition: all .5s;
 }
 
 .rec-btn {
     color: #fff;
     background: var(--Red);
-    padding: 16px 40px;
+    padding: 14px 38px;
+    border: 2px solid var(--Red);
     border-radius: 7px;
     box-shadow: var(--Red) 0px 20px 30px -10px;
+    transition: all .5s ease-out;
+}
+
+.rec-btn:hover {
+    background-color: transparent;
+    color: var(--DarkBlue);
 }
 
 
@@ -49,6 +60,7 @@ li {
     font-family: var(--Rubik);
     color: var(--DarkBlue);
     font-size: 34px;
+    font-weight: 500;
     letter-spacing: 0.8px;
 }
 
@@ -70,7 +82,7 @@ li {
 header {
     padding-top: 30px;
     background-color: transparent;
-    transition: all .7s;
+    transition: all .5s;
     z-index: 1;
 }
 
@@ -95,7 +107,7 @@ header.scrolled {
     font-family: var(--Rubik);
     letter-spacing: 0.8px;
     font-size: 16px;
-    transition: all .7s;
+    transition: all .5s;
 }
 
 .nav-middle li:hover a{
@@ -114,7 +126,7 @@ header.scrolled {
     font-family: var(--Rubik);
     letter-spacing: .8px;
     font-weight: 600;
-    transition: all .7s ease-in;
+    transition: all .5s ease-in;
 }
 
 .nav-register .sign-in:hover {
@@ -268,11 +280,99 @@ header.scrolled {
     padding-top: 120px;
 }
 
+.pricing-title {
+    text-align: center;
+    font-weight: 500;
+}
+
+.pricing-subtitle {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.pricing-card {
+    border: 3px solid #9fa3ad;
+    border-radius: 10px;
+    padding: 35px 60px;
+    position: relative;
+    height: 600px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.pricing-card:hover {
+    border-color: var(--Red);
+}
+
+.pricing-card:hover .ellipse-btn{
+    background-color: var(--Red);
+    color: #fff;
+}
+
+.pricing-card .ellipse-btn:hover {
+    letter-spacing: 0.06rem;
+}
+
+.pricing-card img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pricing-card h2 {
+    font-family: var(--Rubik);
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.pricing-card h2 span {
+    color: var(--Gray);
+    font-weight: 400;
+}
+
+.pricing-card .pricing-list {
+    padding-top: 15px;
+}
+
+.pricing-card .pricing-list li {
+    padding: 7px 0;
+    color: var(--Gray);
+    font-family: var(--Rubik);
+}
+
+.pricing-card .pricing-list li i {
+    color: #2FAB73;
+    margin-right: 15px;
+}
+
+.pricing-card .prices {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pricing-card .prices h2 {
+    position: absolute;
+    width: 100px;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 
 /* Map section */
 .map-section {
-    padding-top: 100px;
+    padding-top: 130px;
 }
 
 .map-section__content h1 {
@@ -295,7 +395,6 @@ header.scrolled {
 
 .map-section__content .map-box {
     margin: 20px auto;
-    border: 1px solid green;
     width: 1000px;
     height: 500px;
     background: url('../images/karta.png');
@@ -310,9 +409,9 @@ header.scrolled {
     width: 30px;
     height: 30px;
     position: absolute;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
 }
 
 .map-box span img {
@@ -360,38 +459,137 @@ header.scrolled {
     left: 900px;
     animation-name: moving1;
 }
+@keyframes moving1 {
+    0% {
+        top: 320px;
+        left: 900px;
+    }
+    25% {
+        top: 320px;
+        left: 600px;
+    }
+    50% {
+        top: 200px;
+        left: 600px;
+    }
+    75% {
+        top: 180px;
+        left: 800px;
+    }
+    100% {
+        top: 320px;
+        left: 900px;
+    }
+}
+
 
 .map-box span:nth-child(2) {
     top: 20px;
     left: 250px;
     animation-name: moving2;
 }
+@keyframes moving2 {
+    0% {
+        top: 20px;
+        left: 250px;
+    }
+    25% {
+        top: 140px;
+        left: 220px;
+    }
+    50% {
+        top: 140px;
+        left: 550px;
+    }
+    75% {
+        top: 20px;
+        left: 450px;
+    }
+    100% {
+        top: 20px;
+        left: 250px;
+    }
+}
+
 
 .map-box span:nth-child(3) {
     top: 60px;
     left: 30px;
     animation-name: moving3;
 }
+@keyframes moving3 {
+    0% {
+        top: 60px;
+        left: 30px;
+    }
+    25% {
+        top: 60px;
+        left: 230px;
+    }
+    50% {
+        top: 160px;
+        left: 130px;
+    }
+    75% {
+        top: 80px;
+        left: 100px;
+    }
+    100% {
+        top: 60px;
+        left: 30px;
+    }
+}
+
+
 .map-box span:nth-child(4) {
     top: 400px;
     left: 930px;
     animation-name: moving4;
+}
+@keyframes moving4 {
+    0% {
+        top: 400px;
+        left: 930px;
+    }
+    25% {
+        top: 200px;
+        left: 930px;
+    }
+    50% {
+        top: 350px;
+        left: 730px;
+    }
+    75% {
+        top: 270px;
+        left: 630px;
+    }
+    100% {
+        top: 400px;
+        left: 930px;
+    }
 }
 
 .map-box span:nth-child(5) {
     top: 60px;
     left: 840px;
     animation-name: moving5;
-    /* border: 1px solid #0000ff; */
 }
-@keyframes moving6 {
+@keyframes moving5 {
     0% {
         top: 60px;
         left: 840px;
     }
+    25% {
+        top: 360px;
+        left: 640px;
+    }
     50% {
+        top: 160px;
+        left: 640px;
+    }
+    75% {
         top: 60px;
-        left: 840px;
+        left: 740px;
     }
     100% {
         top: 60px;
@@ -409,9 +607,17 @@ header.scrolled {
         top: 60px;
         left: 720px;
     }
-    50% {
+    25% {
         top: 140px;
         left: 960px;
+    }
+    50% {
+        top: 340px;
+        left: 850px;
+    }
+    75% {
+        top: 240px;
+        left: 640px;
     }
     100% {
         top: 60px;
@@ -430,9 +636,17 @@ header.scrolled {
         top: 10px;
         left: 400px;
     }
-    50% {
+    25% {
         top: 160px;
         left: 140px;
+    }
+    50% {
+        top: 280px;
+        left: 350px;
+    }
+    75% {
+        top: 180px;
+        left: 550px;
     }
     100% {
         top: 10px;
@@ -451,9 +665,17 @@ header.scrolled {
         top: 100px;
         left: 620px;
     }
-    50% {
+    25% {
         top: 230px;
         left: 780px;
+    }
+    50% {
+        top: 350px;
+        left: 620px;
+    }
+    75% {
+        top: 250px;
+        left: 520px;
     }
     100% {
         top: 100px;
@@ -466,6 +688,7 @@ header.scrolled {
     top: 70px;
     left: 390px;
     animation-name: moving9;
+    border: 1px solid green;
 }
 @keyframes moving9 {
     0% {
@@ -797,3 +1020,69 @@ header.scrolled {
     }
 }
 
+
+
+/* Parters section */
+.partners {
+    display: flex;
+    padding: 120px 0;
+    justify-content: space-between;
+}
+
+.partners .partners-img {
+    width: 210px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners-img img {
+    width: 100%;
+
+}
+
+
+/* Testimonials section */
+
+
+
+.container-swiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-list .card-item .card-link {
+    user-select: none;
+    display: block;
+    background: #d7d3d3;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+.card-list .card-link .card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+    color: #5372F0;
+    font-family: var(--Rubik);
+    background: #dde4ff;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .card-title {
+    color: #000;
+    font-family: var(--Rubik);
+    font-size: 1.19rem;
+    font-weight: 600;
+}
