@@ -1916,12 +1916,11 @@ table tr th:last-child {
 
 
 /* 576 gacha ekranlarda */
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:576px) {
     .container {
         max-width:86%;
         margin: 0 auto;
     }
-
 
     .arrow-up-btn {
         right: 70px;
@@ -1958,10 +1957,10 @@ table tr th:last-child {
     }
 
     .homepage-left .homepage-title {
-        font-size: 28px;
+        font-size: 16px;
+        max-width: 300px;
         font-weight: 400;
         line-height: 40px;
-        width: 400px;
         text-align: center;
     }
 
@@ -1972,8 +1971,8 @@ table tr th:last-child {
     .homepage-left .homepage-subtitle {
         margin-top: 10px;
         font-size: 14px;
+        max-width: 300px;
         line-height: 20px;
-        width: 350px;
         text-align: center;
     }
 
@@ -2031,7 +2030,7 @@ table tr th:last-child {
         display: none;
     }
     .features-right-text {
-        width: 350px;
+        max-width: 300px;
         margin: 0 auto;
     }
     .features-right-text .features-title {
@@ -2062,7 +2061,7 @@ table tr th:last-child {
     }
     .pricing-subtitle {
         font-size: 14px;
-        width: 350px;
+        max-width: 300px;
         margin: 0 auto;
     }
     .pricing-cards {
@@ -2107,13 +2106,13 @@ table tr th:last-child {
 
 
     .partners {
-        width: 350px;
-        padding: 50px 0;
+        width: 300px;
+        padding: 10px 0;
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
     .partners .partners-img {
-        width: 160px;
+        width: 100px;
         height: 60px;
     }
 
@@ -2123,11 +2122,11 @@ table tr th:last-child {
 
     /* Testimonials section */
     .testimonials-content .testimonials-title {
-        width: 350px;
+        max-width: 300px;
         font-size: 24px;
     }
     .testimonials-content .subtitle {
-        width: 350px;
+        max-width: 300px;
         margin: 10px auto 20px;
         font-size: 14px;
     }
@@ -2138,7 +2137,7 @@ table tr th:last-child {
     }
     .wrapper-container .wrapper-card {
         padding: 10px;
-        width: 300px;
+        max-width: 300px;
         height: 180px;
     }
     .wrapper-card .card-user{
@@ -2172,20 +2171,25 @@ table tr th:last-child {
 
     /* Subscribe section */
     .subscriber .container {
-        width: 350px;
+        max-width: 300px;
         height: 230px;
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
+    .subscriber .left-text {
+        width: 300px;
+    }
     .subscriber .left-text h1 {
         font-size: 24px;
         text-align: center;
+        width: 300px;
     }
     .subscriber .left-text .subtitle {
         padding-top: 10px;
         font-size: 14px;
         text-align: center;
+        max-width: 300px;
     }
     .subscriber .right-button {
         padding: 8px 16px;
@@ -2209,7 +2213,7 @@ table tr th:last-child {
         flex-direction: column;
     }
     .footer-left .footer-subtitle {
-        max-width: 350px;
+        max-width: 300px;
         font-size: 14px;
         text-align: center;
     }
