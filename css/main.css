@@ -21,7 +21,7 @@ html {
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -1344,3 +1344,566 @@ table tr td {
 table tr th:last-child {
     padding-right: 0px;
 }
+
+
+
+
+/* RWB styling */
+
+/* 1024 gacha ekranlarda */
+@media only screen and (max-width:1024px) {
+    .container {
+        max-width:94%;
+    }
+
+    .ellipse-btn {
+        padding: 6px 22px;
+        border-width: 2px;
+    }
+
+    .arrow-up-btn {
+        right: 110px;
+    }
+
+    header {
+        padding-top: 20px;
+    }
+
+    .header-main .nav-middle {
+        gap: 15px;
+    }
+
+    .nav-middle li a {
+        letter-spacing: 0.4px;
+        font-size: 14px;
+    }
+
+    .nav-middle li:hover a{
+        letter-spacing: 1.2px;
+        color: #000;
+    }
+
+    .header-main .nav-register {
+        gap: 15px;
+    }
+
+    .nav-register a {
+        letter-spacing: 0.4px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .welcome-page {
+        padding-top: 80px;
+    }
+
+    .header-main img {
+        width: 120px;
+    }
+
+    .homepage-left .homepage-title {
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 42px;
+    }
+
+    .homepage-left .homepage-subtitle {
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .homepage-right img {
+        width: 410px;
+    }
+
+    .homepage-left a {
+        font-size: 16px;
+        font-weight: 500;
+        margin-top:50px;
+        padding: 10px 20px;
+    }
+
+    /* Statistics */
+    .statistic-card {
+        gap: 15px;
+        padding: 10px 25px;
+        border-radius: 6px;
+    }
+    .statistic-card .statistics-icon {
+        width: 45px;
+        height: 45px;
+    }
+    .statistic-card .statistics-icon i {
+        font-size: 16px;
+    }
+    .statistic-card .statistics-text h3 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .statistic-card .statistics-text p {
+        font-size: 14px;
+        letter-spacing: .3px;
+    }
+
+    /* Features section */
+
+    .features {
+        padding-top: 120px;
+    }
+    .features-left-img img {
+        width: 410px;
+    }
+    .features-right-text .features-title {
+        font-weight: 500;
+        width: 350px;
+        font-size: 28px;
+    }
+    .features-right-text p {
+        margin-top: 15px;
+        line-height: 26px;
+        font-size: 16px;
+    }
+    .features-right-text ul {
+        margin-top: 10px;
+    }
+    .features-right-text ul li {
+        font-size: 16px;
+        line-height: 42px;
+    }
+
+
+    /* Pricing section */
+    .pricing {
+        padding-top: 100px;
+    }
+    .pricing-subtitle {
+        padding-top: 13px;
+    }
+    .pricing-cards {
+        padding-top: 60px;
+    }
+    .pricing-card {
+        padding: 35px 40px;
+    }
+
+    /* Map section */
+    .map-section {
+        padding-top: 110px;
+    }
+    .map-section__content h1 {
+        font-size: 28px;
+    }
+    .map-section__content p {
+        width: 500px;
+        margin: 12px auto;
+        font-size: 15px;
+    }
+    .map-section__content .map-box {
+        margin: 30px auto;
+        width: 950px;
+        height: 600px;
+    }
+
+    .partners {
+        padding: 100px 0;
+    }
+    .partners .partners-img {
+        width: 170px;
+        height: 80px;
+    }
+
+    /* Testimonials section */
+    .testimonials-content .testimonials-title {
+        font-size: 28px;
+    }
+    .testimonials-content .subtitle {
+        margin: 15px auto 45px;
+        font-size: 16px;
+    }
+    .wrapper-container .wrapper-card {
+        padding: 15px;
+        width: 300px;
+        height: 210px;
+    }
+    .wrapper-card .card-user{
+        gap: 15px;
+    }
+    .card-user .user-info h3 {
+        font-size: 16px;
+    }
+    .card-user .user-info p {
+        font-size: 13px;
+    }
+    .wrapper-card .card-grade {
+        gap: 7px;
+    }
+    .wrapper-card .card-grade i {
+        font-size: 12px;
+    }
+    .wrapper-card .card-user .user-img {
+        width: 45px;
+        height: 45px;
+    }
+    .wrapper-card .card-bottom-comment {
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+    /* Subscribe section */
+    .subscriber .container {
+        height: 220px;
+        gap: 220px;
+    }
+    .subscriber .left-text .subtitle {
+        padding-top: 15px;
+        font-size: 16px;
+    }
+    .subscriber .right-button {
+        padding: 12px 24px;
+    }
+
+
+    /* Footer section style */
+    footer {
+        padding: 40px 0;
+    }
+
+    .footer-left img {
+        width: 130px;
+    }
+
+    .footer-left .footer-subtitle {
+        font-size: 15px;
+    }
+
+    table tr th {
+        padding-right: 100px;
+    }
+
+    table tr td {
+        padding-bottom: 15px;
+        font-size: 15px;
+    }
+
+}
+
+
+
+
+/* 768 gacha ekranlarda */
+@media only screen and (max-width:768px) {
+    .container {
+        max-width:96%;
+        margin: 0 auto;
+    }
+
+    .ellipse-btn {
+        padding: 6px 22px;
+        border-width: 2px;
+    }
+
+    .arrow-up-btn {
+        right: 70px;
+    }
+
+    header {
+        padding-top: 15px;
+    }
+
+    .header-main img {
+        width: 110px;
+    }
+
+    .header-main .nav-middle {
+        gap: 12px;
+    }
+
+    .nav-middle li a {
+        letter-spacing: 0.4px;
+        font-size: 12px;
+    }
+
+    .nav-middle li:hover a{
+        letter-spacing: 1px;
+        color: #000;
+    }
+
+    .header-main .nav-register {
+        gap: 15px;
+    }
+
+    .nav-register a {
+        letter-spacing: 0.4px;
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .welcome-page {
+        padding-top: 60px;
+    }
+
+
+    .homepage-left {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homepage-left .homepage-title {
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 42px;
+        width: 500px;
+        text-align: center;
+    }
+
+    .homepage-left .homepage-subtitle {
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 22px;
+        width: 500px;
+        text-align: center;
+    }
+
+    .homepage-right img {
+        display: none;
+    }
+
+    .homepage-left a {
+        font-size: 16px;
+        font-weight: 500;
+        margin-top:30px;
+        padding: 10px 20px;
+    }
+
+    /* Statistics */
+    .statistic-card {
+        gap: 15px;
+        padding: 10px 25px;
+        border-radius: 6px;
+    }
+
+    .homepage-statistics {
+        margin-top: 70px;
+    }
+    .statistic-card .statistics-icon {
+        width: 45px;
+        height: 45px;
+    }
+    .statistic-card .statistics-icon i {
+        font-size: 16px;
+    }
+    .statistic-card .statistics-text h3 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .statistic-card .statistics-text p {
+        font-size: 14px;
+        letter-spacing: .3px;
+    }
+
+    /* Features section */
+
+    .features {
+        padding-top: 120px;
+    }
+    .features-left-img img {
+        display: none;
+    }
+    .features-right-text {
+        width: 400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .features-right-text .features-title {
+        font-weight: 500;
+        font-size: 28px;
+        text-align: center;
+    }
+    .features-right-text p {
+        margin-top: 15px;
+        line-height: 26px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .features-right-text ul {
+        margin-top: 10px;
+    }
+    .features-right-text ul li {
+        font-size: 16px;
+        line-height: 42px;
+    }
+
+
+    /* Pricing section */
+    .pricing {
+        padding-top: 80px;
+    }
+    .pricing-title {
+        font-weight: 500;
+        font-size: 28px;
+    }
+    .pricing-subtitle {
+        padding-top: 13px;
+        font-size: 16px;
+        width: 400px;
+        margin: 0 auto;
+    }
+    .pricing-cards {
+        padding-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .pricing-card {
+        padding: 10px 20px;
+        height: 360px;
+    }
+    .pricing-card img {
+        display: none;
+    }
+    .pricing-card h2 {
+        font-size: 1.2rem;
+    }
+    .pricing-card .pricing-list {
+        padding-top: 10px;
+    }
+    .pricing-card .pricing-list li {
+        padding: 5px 0;
+    }
+    .pricing-card .prices {
+        bottom: 25px;
+    }
+
+    
+
+    /* Map section */
+    .map-section {
+        display: none;
+    }
+
+    .partners {
+        padding: 70px 0;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .partners .partners-img {
+        width: 200px;
+        height: 60px;
+    }
+
+    .partners .partners-img img {
+        width: 70%;
+    }
+
+    /* Testimonials section */
+    .testimonials-content .testimonials-title {
+        font-size: 26px;
+    }
+    .testimonials-content .subtitle {
+        margin: 15px auto 20px;
+        font-size: 14px;
+    }
+    .wrapper-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .wrapper-container .wrapper-card {
+        padding: 15px;
+        width: 300px;
+        height: 210px;
+    }
+    .wrapper-card .card-user{
+        gap: 15px;
+    }
+    .card-user .user-info h3 {
+        font-size: 16px;
+    }
+    .card-user .user-info p {
+        font-size: 13px;
+    }
+    .wrapper-card .card-grade {
+        gap: 7px;
+    }
+    .wrapper-card .card-grade i {
+        font-size: 12px;
+    }
+    .wrapper-card .card-user .user-img {
+        width: 45px;
+        height: 45px;
+    }
+    .wrapper-card .card-bottom-comment {
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .controllers-box .controllers {
+        display: none;
+    }
+
+
+    /* Subscribe section */
+    .subscriber .container {
+        height: 220px;
+        gap: 60px;
+    }
+    .subscriber .left-text h1 {
+        font-size: 24px;
+    }
+    .subscriber .left-text .subtitle {
+        padding-top: 15px;
+        font-size: 14px;
+    }
+    .subscriber .right-button {
+        padding: 8px 16px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+
+    /* Footer section style */
+    footer {
+        padding: 20px 0;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-left .footer-subtitle {
+        font-size: 15px;
+        text-align: center;
+    }
+    .footer-left img {
+        width: 100px;
+    }
+
+    table {
+        padding:30px 0;
+    }
+    table tr th {
+        padding-right: 100px;
+        padding-bottom: 10px;
+    }
+
+    table tr td {
+        padding-bottom: 5px;
+        font-size: 15px;
+    }
+
+}
+
+
+
