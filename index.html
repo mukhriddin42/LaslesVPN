@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="icon" href="./images/favicon.png">
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="./assets/script.js" defer></script>
     <title>LaslesVPN</title>
   </head>
   <body>
@@ -29,8 +30,9 @@
             <li><a href="#subscribe">Help</a></li>
           </ul>
           <div class="nav-register">
-            <a href="./pages/register/sign_in.html" class="sign-in">Sign In</a>
-            <a href="./pages/register/sign_up.html" class="sign-up ellipse-btn"
+            <a onclick="changeMode()" class="night_mode_link" href="#"><i class="fa-solid fa-moon"></i></a>
+            <a href="#" class="sign-in">Sign In</a>
+            <a href="#" onclick="openModal()"  class="sign-up ellipse-btn"
               >Sign Up</a
             >
           </div>
@@ -39,6 +41,18 @@
           </div>
         </div>
       </header>
+
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h3>Ro‘yxatdan o‘tish</h3>
+            <input type="text" placeholder="Ism" id="name">
+            <input type="email" placeholder="Email" id="email">
+            <input type="password" placeholder="Parol" id="password">
+            <button id="submit">Yuborish</button>
+            <button id="closeModal" onclick="closeModal()" style="background: red; margin-top: 5px;">Bekor qilish</button>
+        </div>
+      </div>
 
       <div class="welcome-page">
         <div class="container homepage-content">
@@ -412,6 +426,6 @@
     <!-- /Footer section -->
 
 
-    <script src="./assets/script.js"></script>
+    
   </body>
 </html>
